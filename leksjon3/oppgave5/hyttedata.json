@@ -1,0 +1,63 @@
+[
+    {
+        "navn": "Hytte Lifjell",
+        "beliggenhet": {"breddegrad": 59.4000, "lengdegrad": 8.7833,"moh": 850},
+        "type": "Ubetjent",
+        "kapasitet": {"antallSengeplasser": 12, "antallRom": 2},
+        "fasiliteter": ["dusj", "toalett", "vedovn"],
+        "kontakt": {
+            "eier": "Bø Turistforening", 
+            "telefonnummer": "00000000", 
+            "epost": "bo@dnt.no", 
+            "adresse": {"gate": "Eksempelgata 5", "postnummer": 3800}},
+        "anmeldelser": [4,5,3,2,4,5,3,4,5,4,5],
+        "tilknyttedeTurloyper": ["Tretoppern", "Øysteinnatten"]
+
+    },
+    {
+        "navn": "Røggjen",
+        "beliggenhet": {"breddegrad": 60.6851, "lengdegrad": 9.2304,"moh": 988},
+        "type": "Ubetjent",
+        "kapasitet": {"antallSengeplasser": 6, "antallRom": 2},
+        "fasiliteter": ["dusj", "toalett", "vedovn"],
+        "kontakt": {
+            "eier": "Drammen og omegn DNT", 
+            "telefonnummer": "00000000", 
+            "epost": "kontoret.drammen@dnt.no", 
+            "adresse": {"gate": "Eksempelgata 5", "postnummer": 5555}},
+        "anmeldelser": [4,5,3,2,4,3,2,4,2],
+        "tilknyttedeTurloyper": ["Fottur til Røggjenatten", "Rundtur til Vardefjell"]
+
+    },
+    {
+        "navn": "Blåheia",
+        "beliggenhet": {"breddegrad": 61.1042, "lengdegrad": 8.7623, "moh": 1120},
+        "type": "Selvbetjent",
+        "kapasitet": {"antallSengeplasser": 12, "antallRom": 4},
+        "fasiliteter": ["dusj", "toalett", "vedovn", "solcellepanel", "kjøkken"],
+        "kontakt": {
+            "eier": "Valdres DNT",
+            "telefonnummer": "00000000",
+            "epost": "kontoret.valdres@dnt.no",
+            "adresse": {"gate": "Eksempelveien 12", "postnummer": 2900}
+        },
+        "anmeldelser": [5, 4, 4, 3, 5, 4, 2, 5, 4, 3],
+        "tilknyttedeTurloyper": ["Fottur til Blåheia rundt", "Sti til Steinbuvatnet", "Topptur til Kvitfjell"]
+    },
+    {
+        "navn": "Litlosvatnet",
+        "beliggenhet": {"breddegrad": 59.9871, "lengdegrad": 7.4356, "moh": 745},
+        "type": "Ubetjent",
+        "kapasitet": {"antallSengeplasser": 8, "antallRom": 3},
+        "fasiliteter": ["vedovn", "toalett", "utedo", "kildevann"],
+        "kontakt": {
+            "eier": "Setesdal Turlag",
+            "telefonnummer": "00000000",
+            "epost": "kontoret.setesdal@dnt.no",
+            "adresse": {"gate": "Fjellveien 8", "postnummer": 4747}
+        },
+        "anmeldelser": [3, 4, 5, 4, 2, 3, 4],
+        "tilknyttedeTurloyper": ["Fottur til Litlosvatnet", "Sti til Kaldalen", "Rundtur via Nutefjell"]
+    }
+
+]

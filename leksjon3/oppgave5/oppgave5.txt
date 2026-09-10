@@ -1,0 +1,16 @@
+OPPGAVE 5
+
+hyttedata.json og visHytter.ts ligger i samme mappe som denne fil.
+
+En fordel med TypeScript vs JavaScript er at en del feil blir oppdaget ved kompilering,
+slik at disse feilene ikke finner veien helt til nettleseren.
+
+Ulemper med TS kan være det er litt mer komplisert å skrive samt det er et ekstra kompileringssteg.
+Ulempen med ekstra kompileringssteg faller derimot bort dersom man uansett bruker f eks React.
+
+
+Kan testes f eks slik:
+npx tsx visHytter.ts
+
+evt:
+npx tsc visHytter.ts    dersom man vil ha kompilert til en js-fil slik at den kan brukes med html+css+js
