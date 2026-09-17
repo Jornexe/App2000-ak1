@@ -31,14 +31,15 @@ function visHytter(hyttearray: Hytte[]): string {
     const visHytte = (hytte: Hytte) :string =>{ //returnerer 0 dersom antall anmeldelser er 0.
         const gjennomsnittAnmeldelse = hytte.anmeldelser.length > 0 ? hytte.anmeldelser.reduce((sum, tall) => sum + tall, 0) / hytte.anmeldelser.length: 0;
         let html :string = '<tr>';
-        html += `<td style="border: 1px solid black; padding: 8px 12px;">${hytte.navn}</td>`;
-        html += `<td style="border: 1px solid black; padding: 8px 12px;">${hytte.beliggenhet.moh} moh ${hytte.beliggenhet.breddegrad} ${hytte.beliggenhet.lengdegrad}</td>`;
-        html += `<td style="border: 1px solid black; padding: 8px 12px;">${hytte.type}</td>`;
-        html += `<td style="border: 1px solid black; padding: 8px 12px;">${hytte.kapasitet.antallSengeplasser} senger ${hytte.kapasitet.antallRom} rom</td>`;
-        html += `<td style="border: 1px solid black; padding: 8px 12px;">${hytte.fasiliteter.join(', ')}</td>`;
-        html += `<td style="border: 1px solid black; padding: 8px 12px;">${hytte.kontakt.eier} ${hytte.kontakt.epost}  ${hytte.kontakt.telefonnummer}  ${hytte.kontakt.adresse.gate}  ${hytte.kontakt.adresse.postnummer}</td>`;
-        html += `<td style="border: 1px solid black; padding: 8px 12px;">${gjennomsnittAnmeldelse.toFixed(1)}</td>`;
-        html += `<td style="border: 1px solid black; padding: 8px 12px;">${hytte.tilknyttedeTurloyper.join(', ')}</td>`;
+        let tdStyle :string = 'border: 1px solid black; padding: 8px 12px;'; //
+        html += `<td style="${tdStyle}">${hytte.navn}</td>`;
+        html += `<td style="${tdStyle}">${hytte.beliggenhet.moh} moh ${hytte.beliggenhet.breddegrad} ${hytte.beliggenhet.lengdegrad}</td>`;
+        html += `<td style="${tdStyle}">${hytte.type}</td>`;
+        html += `<td style="${tdStyle}">${hytte.kapasitet.antallSengeplasser} senger ${hytte.kapasitet.antallRom} rom</td>`;
+        html += `<td style="${tdStyle}">${hytte.fasiliteter.join(', ')}</td>`;
+        html += `<td style="${tdStyle}">${hytte.kontakt.eier} ${hytte.kontakt.epost}  ${hytte.kontakt.telefonnummer}  ${hytte.kontakt.adresse.gate}  ${hytte.kontakt.adresse.postnummer}</td>`;
+        html += `<td style="${tdStyle}">${gjennomsnittAnmeldelse.toFixed(1)}</td>`;
+        html += `<td style="${tdStyle}">${hytte.tilknyttedeTurloyper.join(', ')}</td>`;
         html += '</tr>';
         return html;
 
