@@ -44,10 +44,10 @@ function visHytter(hyttearray: Hytte[]): string {
         return html;
 
     }
-    const thCSS: string = "border: 1px solid black; padding: 8px 12px;";
+    const thStyle: string = "border: 1px solid black; padding: 8px 12px;";
     let html: string = '<table style="border: 1px solid black; border-collapse: collapse; max-width: 1000px;">';
     html += '<thead><tr>';
-    html += `<th style="${thCSS}">Navn</th><th style="${thCSS}">Beliggenhet</th><th style="${thCSS}">Type</th><th style="${thCSS}">Kapasitet</th><th style="${thCSS}">Fasiliteter</th><th style="${thCSS}">Kontakt</th><th style="${thCSS}">Snitt anmeldelse</th><th style="${thCSS}">Turløyper</th>`;
+    html += `<th style="${thStyle}">Navn</th><th style="${thStyle}">Beliggenhet</th><th style="${thStyle}">Type</th><th style="${thStyle}">Kapasitet</th><th style="${thStyle}">Fasiliteter</th><th style="${thStyle}">Kontakt</th><th style="${thStyle}">Snitt anmeldelse</th><th style="${thStyle}">Turløyper</th>`;
     html += '</tr></thead><tbody>';
 
     for (let hytte of hyttearray) {
