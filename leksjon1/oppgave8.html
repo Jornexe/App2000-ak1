@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Turappen hjelper deg å finne neste tur i norsk natur.">
+  <title>Turappen | Finn din neste tur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#top"><span class="brand-mark">+</span><span class="brand-name">turappen</span></a>
+      <nav aria-label="Hovedmeny">
+        <p class="nav-label">Utforsk</p>
+        <div class="nav-list">
+          <button class="nav-link active"><span class="nav-icon">⌂</span>Forsiden</button>
+          <button class="nav-link"><span class="nav-icon">⌖</span>Finn en tur</button>
+          <button class="nav-link"><span class="nav-icon">♡</span>Mine favoritter</button>
+          <button class="nav-link"><span class="nav-icon">✓</span>Mine turer</button>
+        </div>
+      </nav>
+      <div class="sidebar-tip"><p>Frisk luft starter med ett lite valg. Finn et sted du har lyst til å oppdage.</p><a class="tip-link" href="#turer">Se anbefalinger →</a></div>
+    </aside>
+
+    <header class="topbar" id="top">
+      <button class="menu-button" id="menuButton" aria-label="Åpne meny">☰</button>
+      <div class="breadcrumb">Du er her: <strong>Utforsk turer</strong></div>
+      <div class="top-actions"><button class="icon-button" aria-label="Varsler">♧<span class="notification"></span></button><span class="avatar">MT</span></div>
+    </header>
+
+    <main>
+      <div class="content-grid">
+        <section aria-labelledby="page-title">
+          <div class="intro"><p class="eyebrow">Lørdag 12. september 2026</p><h1 id="page-title">Ut på tur, aldri sur.</h1><p class="intro-copy">Oppdag fine turer i nærheten av deg. Vi har samlet stier for både rolige søndagsturer og små eventyr.</p></div>
+          <form class="search-panel" id="searchForm" role="search"><input id="searchInput" type="search" placeholder="Søk etter sted eller turtype" aria-label="Søk etter sted eller turtype"><button class="search-button" type="submit">Søk</button></form>
+          <div class="section-heading" id="turer"><h2>Anbefalt for deg</h2><span class="result-count" id="resultCount">4 turer i nærheten</span></div>
+          <div class="trail-list">
+            <article class="trail-card" data-search="ulriken bergen fjell middels 6 km"><div class="trail-image image-one"><span class="difficulty">Middels</span><button class="save" aria-label="Lagre Ulriken rundt">♡</button></div><div class="trail-info"><h3>Ulriken rundt</h3><p class="location">Bergen, Vestland</p><div class="trail-meta"><span><strong>6,2 km</strong> · 2 t</span><span>↗ 342 høydemeter</span></div></div></article>
+            <article class="trail-card" data-search="sognsvann oslo skog lett 3 km"><div class="trail-image image-two"><span class="difficulty">Lett</span><button class="save" aria-label="Lagre Sognsvann rundt">♡</button></div><div class="trail-info"><h3>Sognsvann rundt</h3><p class="location">Oslo, Østlandet</p><div class="trail-meta"><span><strong>3,3 km</strong> · 50 min</span><span>↗ 42 høydemeter</span></div></div></article>
+            <article class="trail-card" data-search="preikestolen stavanger fjell krevende 8 km"><div class="trail-image image-three"><span class="difficulty">Krevende</span><button class="save" aria-label="Lagre Preikestolen">♡</button></div><div class="trail-info"><h3>Preikestolen</h3><p class="location">Strand, Rogaland</p><div class="trail-meta"><span><strong>8,0 km</strong> · 4 t</span><span>↗ 500 høydemeter</span></div></div></article>
+            <article class="trail-card" data-search="bymarka trondheim skog lett 5 km"><div class="trail-image image-four"><span class="difficulty">Lett</span><button class="save" aria-label="Lagre Bymarka">♡</button></div><div class="trail-info"><h3>Skistua i Bymarka</h3><p class="location">Trondheim, Trøndelag</p><div class="trail-meta"><span><strong>5,1 km</strong> · 1,5 t</span><span>↗ 120 høydemeter</span></div></div></article>
+          </div>
+        </section>
+
+        <aside class="right-column" aria-label="Nyttig informasjon">
+          <section class="side-card weather-card"><h2>Været i Bergen</h2><div class="weather-main"><span class="temperature">12°</span><span class="weather-icon">☼</span></div><p>Perfekt turvær akkurat nå</p><div class="weather-details"><div>Vind<strong>3 m/s</strong></div><div>Nedbør<strong>10 %</strong></div></div></section>
+          <section class="side-card"><h2>Fortsett der du slapp</h2><div class="quick-list"><div class="quick-item"><span class="quick-icon">↗</span><p><strong>Fløyen fra sentrum</strong>45 % fullført</p></div><div class="quick-item"><span class="quick-icon">◷</span><p><strong>Stoltzekleiven</strong>Planlagt søndag</p></div></div><a class="view-all" href="#turer">Se alle mine turer →</a></section>
+        </aside>
+      </div>
+    </main>
+
+    <footer><div class="footer-inner"><strong>turappen</strong><span>Et lite dytt ut. Laget for norske turer.</span><span>© 2026 Turappen</span></div></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
