@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turappen - inndatavalidering</title>
+    <script src="js.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Planlegg en tur</h1>
+        <p>Fyll ut skjemaet for å registrere en tur.</p>
+
+        <form id="trip-form">
+            <p>
+                <label for="trip-name">Navn på tur:</label><br>
+                <input id="trip-name" name="tripName" type="text" required minlength="3" maxlength="60"
+                    placeholder="Jotunheimen rundt">
+            </p>
+            <p>
+                <label for="destination">Reisemål:</label><br>
+                <input id="destination" name="destination" type="text" required minlength="2" maxlength="60"
+                    placeholder="Lom">
+            </p>
+            <p>
+                <label for="departure">Avreise:</label><br>
+                <input id="departure" name="departure" type="date" required>
+            </p>
+            <p>
+                <label for="return-date">Retur:</label><br>
+                <input id="return-date" name="returnDate" type="date" required>
+            </p>
+            <p>
+                <label for="participants">Antall deltakere:</label><br>
+                <input id="participants" name="participants" type="number" required min="1" max="50" step="1">
+            </p>
+            <p>
+                <label for="email">Kontakt-e-post:</label><br>
+                <input id="email" name="email" type="email" required maxlength="120"
+                    placeholder="navn@eksempel.no">
+            </p>
+            <p>
+                <button type="submit">Registrer tur</button>
+            </p>
+            <p id="message" role="status" aria-live="polite"></p>
+        </form>
+
+        <h2>Registrerte turer</h2>
+        <ul id="trip-list"></ul>
+
+        <h2>Er klientvalidering tilstrekkelig?</h2>
+        <p>
+            Nei. HTML- og JavaScript-validering skjer på klientsiden og kan skrus av eller omgås av brukeren.
+            Derfor må dataene valideres på nytt på serveren før de lagres eller brukes. Serveren må også kontrollere
+            tilgang, beskytte mot skadelig innhold og bruke parameteriserte databaseforespørsler. Klientvalidering er
+            fortsatt nyttig fordi den gir rask og god tilbakemelding til brukeren, samt som den ungår å sende serveren
+            forespørsler som ikke er godkjente (unngå spam på skala).
+        </p>
+    </main>
+</body>
+</html>
